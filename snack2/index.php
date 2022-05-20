@@ -3,7 +3,7 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 
 <?php
 
-//dumbo i passaggi passati tramite metodo GET
+//dumbo i parametri passati tramite GET
 
 /* var_dump($_GET);
 var_dump($_GET["name"]);
