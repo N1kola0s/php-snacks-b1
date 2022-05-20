@@ -21,7 +21,7 @@ $calendario = [//primo livello
         "squadra casa" => "Juve Caserta",
         "squadra ospite" => "Montepaschi Siena",
         "punti sq.casa" => 95,
-        "punti sq. ospite" => 45,l
+        "punti sq. ospite" => 45,
     ]
 
     ];
