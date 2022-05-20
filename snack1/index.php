@@ -7,6 +7,8 @@ Olimpia Milano - Cantù | 55-60
 
 <?php
 
+//creo struttura dati multilivello per una ipotetica giornata in calendario di basket
+
 $calendario = [//primo livello
 
     [//secondi livelli
@@ -26,6 +28,7 @@ $calendario = [//primo livello
 
     ];
 
+    //dumpo a schermo la struttura dati
     var_dump($calendario);
 
 ?>
@@ -40,17 +43,16 @@ $calendario = [//primo livello
     <title>Snack1</title>
 </head>
 <body>
+    <!-- stampo a schermo le partite del calendario in programma -->
 
     <h3>Prima Giornata</h3>
 
+    <!-- imposto un ciclo for in modo da stampare le singole partite dell'array -->
     <?php for($i=0; $i <= count($calendario) - 1; $i++): ?>
 
     <p><?php echo $calendario[$i]["squadra_casa"]; ?> - <?php echo $calendario[$i]["squadra_ospite"]; ?> / <?php echo $calendario[$i]["punti_casa"]; ?> - <?php echo $calendario[$i]["punti_ospite"]; ?> </p>
     
-
     <?php endfor; ?>
-
-
 
 </body>
 </html>
