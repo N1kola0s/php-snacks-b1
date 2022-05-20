@@ -7,6 +7,25 @@ Olimpia Milano - Cantù | 55-60
 
 <?php
 
+$calendario = [//primo livello
+
+    [//secondi livelli
+
+        "squadra casa" => "Olimpia Milano",
+        "squadra ospite" => "Cantù",
+        "punti sq.casa" => 55,
+        "punti sq. ospite" => 60,l
+    ],
+    [
+
+        "squadra casa" => "Juve Caserta",
+        "squadra ospite" => "Montepaschi Siena",
+        "punti sq.casa" => 95,
+        "punti sq. ospite" => 45,l
+    ]
+
+    ];
+
 ?>
 
 
