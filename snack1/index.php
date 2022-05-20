@@ -11,20 +11,22 @@ $calendario = [//primo livello
 
     [//secondi livelli
 
-        "squadra casa" => "Olimpia Milano",
-        "squadra ospite" => "Cantù",
-        "punti sq.casa" => 55,
-        "punti sq. ospite" => 60,l
+        "squadra_casa" => "Olimpia Milano",
+        "squadra_ospite" => "Cantù",
+        "punti_casa" => "55",
+        "punti_ospite" => "60",
     ],
     [
 
-        "squadra casa" => "Juve Caserta",
-        "squadra ospite" => "Montepaschi Siena",
-        "punti sq.casa" => 95,
-        "punti sq. ospite" => 45,
-    ]
+        "squadra_casa" => "Juve Caserta",
+        "squadra_ospite" => "Montepaschi Siena",
+        "punti_casa" => "95",
+        "punti_ospite" => "45",
+    ],
 
     ];
+
+    var_dump($calendario);
 
 ?>
 
@@ -38,6 +40,7 @@ $calendario = [//primo livello
     <title>Snack1</title>
 </head>
 <body>
+    <h1>ciao</h1>
     
 </body>
 </html>
