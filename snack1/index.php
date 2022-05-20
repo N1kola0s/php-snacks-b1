@@ -13,15 +13,15 @@ $calendario = [//primo livello
 
         "squadra_casa" => "Olimpia Milano",
         "squadra_ospite" => "Cantù",
-        "punti_casa" => "55",
-        "punti_ospite" => "60",
+        "punti_casa" => 55,
+        "punti_ospite" => 60,
     ],
     [
 
         "squadra_casa" => "Juve Caserta",
         "squadra_ospite" => "Montepaschi Siena",
-        "punti_casa" => "95",
-        "punti_ospite" => "45",
+        "punti_casa" => 95,
+        "punti_ospite" => 45,
     ],
 
     ];
@@ -40,7 +40,17 @@ $calendario = [//primo livello
     <title>Snack1</title>
 </head>
 <body>
-    <h1>ciao</h1>
+
+    <h3>Prima Giornata</h3>
+
+    <?php for($i=0; $i <= count($calendario) - 1; $i++): ?>
+
+    <p><?php echo $calendario[$i]["squadra_casa"]; ?> - <?php echo $calendario[$i]["squadra_ospite"]; ?> / <?php echo $calendario[$i]["punti_casa"]; ?> - <?php echo $calendario[$i]["punti_ospite"]; ?> </p>
     
+
+    <?php endfor; ?>
+
+
+
 </body>
 </html>
