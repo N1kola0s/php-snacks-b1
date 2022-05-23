@@ -5,40 +5,47 @@ Creare un array di array. Ogni array figlio avrà come chiave una data in questo
 
  <?php
 
- $posts = [
 
-    '10-01-2019' => [
 
-        'title' => 'Post 1',
-        'author' => 'Michele Papagni',
-        'text' => 'Testp post 1'
+$date = [
 
+    '10/01/2019' => [
+        [
+            'title' => 'Post 1',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 1'
+        ],
+        [
+            'title' => 'Post 2',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 2'
+        ],
     ],
-    '11-01-2019' => [
-
-        'title' => 'Post 2',
-        'author' => 'Michele Papagni',
-        'text' => 'Testp post 2'
-
+    '10/02/2019' => [
+        [
+            'title' => 'Post 3',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 3'
+        ]
     ],
-    '12-01-2019' => [
-
-        'title' => 'Post 3',
-        'author' => 'Michele Papagni',
-        'text' => 'Testp post 3'
-
+    '15/05/2019' => [
+        [
+            'title' => 'Post 4',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 4'
+        ],
+        [
+            'title' => 'Post 5',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 5'
+        ],
+        [
+            'title' => 'Post 6',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 6'
+        ]
     ],
-    '13-01-2019' => [
-
-        'title' => 'Post 4',
-        'author' => 'Michele Papagni',
-        'text' => 'Testp post 4'
-
-    ]
-    ];
-
- var_dump($posts);
-
+];
 
  ?>
 
@@ -54,18 +61,31 @@ Creare un array di array. Ogni array figlio avrà come chiave una data in questo
  <body>
      
 
-        <?php foreach ($posts as $key => $value ) : ?>
+        <?php foreach ($date as $data=> $posts ) : ?>
 
-            <ul><?php echo $key?>
+            <h4> Data pubblicazione: <?php echo $data ?></h4>
 
-                <li><?php foreach() ?>
-            
+            <div>
+                <?php foreach($posts as $post) :?>
+
+                    <h5> Titolo: <?php echo $post['title']; ?></h5>
+                        
+                    
+
+                    <div>
+                        Autore: <?php echo $post['author']; ?>
+                        
+                    </div>
+
+                    <div>
+                        
+                        Messaggio: <?php echo $post['text']; ?>
+                        
+                    </div>
+
                 <?php endforeach; ?>
-                </li>
 
-        
-        
-            </ul>
+            </div>
 
         <?php endforeach; ?>
     
